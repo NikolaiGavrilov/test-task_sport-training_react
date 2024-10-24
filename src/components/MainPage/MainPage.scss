@@ -1,0 +1,104 @@
+.main-page {
+  background-color: #f5f7f7;
+}
+
+.container {
+  padding-left: calc(50% - 1440px / 2);
+  padding-right: calc(50% - 1440px / 2);
+
+}
+
+.title {
+  font-family: Rubik;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #2d3242;
+  padding-top: 27px;
+  padding-bottom: 97px;
+  text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 1440px;
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    width: 585px;
+  }
+}
+
+.description {
+  padding-top: 13px;
+  padding-bottom: 26px;
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  text-align: left;
+  color: #2d3242;
+}
+
+.checkbox {
+  margin-left: 0px;
+  margin-bottom: 50px;
+}
+
+.checkbox-text {
+  width: 454px;
+  margin-left: 12px;
+  color: #818798;
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.6px;
+  text-align: left;
+  text-justify: left;
+}
+
+.checkbox-link {
+  color: #78bbf8;
+
+  &__new-line {
+    padding-left: 24px;
+  }
+}
+
+.buy-btn {
+  margin-left: 0;
+  background-color: #fd4d35;
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #ffffff;
+  padding: 28px 100px;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+
+  &:active {
+    transform: scale(105%);
+  }
+}
+
+.disclaimer {
+  padding-top: 30px;
+  padding-bottom: 107px;
+  font-family: PT Root UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: left;
+  color: #818798;
+}

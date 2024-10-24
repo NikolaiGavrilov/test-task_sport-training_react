@@ -1,0 +1,124 @@
+.offers {
+  display: grid;
+  grid-template-columns: repeat(3, 187px);
+  grid-template-rows: 291px 155px;
+  gap: 12px;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__info {
+    width: 187px;
+    height: 261px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 2px solid #d3d6dd;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: #01b9c50d;
+      border: 2px solid #01b9c5;
+    }
+  }
+
+  &__big {
+    margin-top: 28px;
+
+    grid-row: 2/3;
+    grid-column: 1/4;
+  }
+
+  &__big .offer__info {
+    width: 585px;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__big .offer__description {
+    padding-top: 37px;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 30px;
+  }
+
+  &__big .offer__duration {
+    color: #2d3242;
+    padding-left: 31px;
+  }
+
+  &__duration {
+    padding-top: 45px;
+    padding-left: 18px;
+    font-family: Bebas Neue Cyrillic;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #687078;
+    text-transform: uppercase;
+  }
+
+  &__prices-flex {
+    padding-top: 21px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  &__current-price {
+    font-family: PT Root UI;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: -2px;
+    text-align: left;
+    color: #2d3242;
+  }
+
+  &__old-price {
+    padding-left: 57px;
+    font-family: PT Root UI;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26.4px;
+    text-align: left;
+    color: #95979f;
+    text-decoration: line-through;
+  }
+
+  &__description {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 18px;
+    font-family: PT Root UI;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: center;
+    color: #2f4353;
+  }
+
+  &__discount {
+    position: absolute;
+    right: 5px;
+    top: -30px;
+    background-image: url("../../../public/img/Star.png");
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-text {
+      font-family: PT Root UI;
+      font-size: 18.67px;
+      font-weight: 500;
+      line-height: 24.27px;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+}

@@ -8,9 +8,24 @@
   z-index: 20;
   display: flex;
   flex-direction: column;
+  border: 2px solid #d3d6dd;
+
+  &__close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    &:hover {
+      filter: brightness(50%);
+    }
+
+    &:active {
+      transform: scale(120%);
+    }
+  }
 
   &__zakladka {
     margin-left: 42px;
+    padding: 4px 10px 6px 10px;
     margin-bottom: 30px;
     font-family: PT Root UI;
     font-size: 16px;
@@ -58,6 +73,7 @@
     padding: 12px 28px 16px 30px;
     border-radius: 30px;
     margin-bottom: 40px;
+    margin-top: 8px;
   }
 
   &__offers {
@@ -74,7 +90,9 @@
   }
 
   &__offers-flex {
-    gap: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
   &__offer {
     position: relative;
@@ -85,14 +103,46 @@
     opacity: 0px;
     border: 2px solid #e7eaf1;
     background-color: #ffffff;
+    transition: background-color 0.3s ease, border 0.3s ease;
 
     &:hover {
       background-color: #01b9c505;
       border: 2px solid #01b9c5;
     }
+
+    &.selected {
+      background-color: #d0f0f0;
+      border: 2px solid #01b9c5;
+    }
+  }
+
+  .popup__offer-radio {
+    position: absolute;
+    top: 26px;
+    right: 22px;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #555965;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .popup__offer-radio.checked {
+    border-color: #01b9c5;
+  }
+
+  .popup__inner-circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #01b9c5;
   }
 
   &__offer-title {
+    display: block;
     padding-top: 26px;
     margin-left: 28px;
     font-family: Bebas Neue Cyrillic;
@@ -104,6 +154,7 @@
   }
 
   &__offer-old-price {
+    position: relative;
     padding-top: 12px;
     margin-left: 28px;
     font-family: PT Root UI;
@@ -113,11 +164,48 @@
     text-align: left;
     color: #2d3242;
     opacity: 0.7;
+
+    &::before,
+    &::after {
+      margin-top: 5px;
+      margin-left: -2px;
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 2px; // Толщина линий, измените по необходимости
+      background-color: #fd4d35; // Цвет линий
+    }
+
+    &::before {
+      top: 50%;
+      left: 0;
+      transform: rotate(18.1deg);
+      transform-origin: center;
+    }
+
+    &::after {
+      top: 50%;
+      left: 0;
+      transform: rotate(-18.1deg);
+      transform-origin: center;
+    }
+  }
+  &__offer-line {
+    height: 1px;
+    width: 134px;
+    background-color: #e7eaf1;
+    margin-top: 16px;
+  }
+
+  &__offer-price-flex {
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px;
+    gap: 1px;
   }
 
   &__offer-current-price {
-    padding-top: 40px;
-    margin-left: 28px;
+    display: block;
     font-family: PT Root UI;
     font-size: 46px;
     font-weight: 700;
@@ -127,22 +215,45 @@
   }
 
   &__offer-discount {
-    position: absolute;
-    right: 23px;
-    bottom: 35px;
+    margin-left: -20px;
+    margin-top: -15px;
     background-image: url("../../../public/img/Star_popup.png");
     height: 46px;
-    width: 47px;
+    width: 46px;
+
     display: flex;
     align-items: center;
     justify-content: center;
     &-text {
       font-family: PT Root UI;
-      font-size: 18.67px;
+      font-size: 13.33px;
       font-weight: 500;
-      line-height: 24.27px;
+      line-height: 17.33px;
       text-align: left;
       color: #ffffff;
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    padding: 20px 42px;
+    background-color: #fd4d35;
+    border-radius: 30px;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(120%);
+    }
+
+    &:active {
+      transform: scale(105%);
     }
   }
 }

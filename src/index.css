@@ -18,3 +18,22 @@ code {
   text-decoration: none;
 }
 
+@font-face {
+	font-family: 'Bebas Neue Cyrillic';
+	src: url('../src/fonts/bebas_neue_cyrillic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../src/fonts/bebas_neue_cyrillic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../src/fonts/bebas_neue_cyrillic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../src/fonts/bebas_neue_cyrillic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../src/fonts/bebas_neue_cyrillic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../src/fonts/bebas_neue_cyrillic.svg#bebas_neue_cyrillic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('../src/fonts/rubik.eot'); /* IE 9 Compatibility Mode */
+	src: url('../src/fonts/rubik.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../src/fonts/rubik.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../src/fonts/rubik.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../src/fonts/rubik.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../src/fonts/rubik.svg#rubik') format('svg'); /* Chrome < 4, Legacy iOS */
+}

@@ -37,23 +37,32 @@
     height: 125px;
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   &__big .offer__description {
-    padding-top: 37px;
     text-align: left;
-    padding-left: 0;
+    margin-top: 0px;
+    padding-left: 0px;
     padding-right: 30px;
+    width: 161px;
   }
 
   &__big .offer__duration {
+    margin-top: 0px;
     color: #2d3242;
-    padding-left: 31px;
+    margin-left: 31px;
+  }
+
+  &__big .offer__prices-flex {
+    margin-top: 0px;
+    margin-left: 18px;
+    margin-right: 20px;
   }
 
   &__duration {
-    padding-top: 45px;
-    padding-left: 18px;
+    margin-top: 45px;
+    margin-left: 18px;
     font-family: Bebas Neue Cyrillic;
     font-size: 30px;
     font-weight: 400;
@@ -64,9 +73,8 @@
   }
 
   &__prices-flex {
-    padding-top: 21px;
-    padding-left: 36px;
-    padding-right: 36px;
+    margin-top: 21px;
+    align-self: center;
   }
 
   &__current-price {
@@ -80,12 +88,11 @@
   }
 
   &__old-price {
-    padding-left: 57px;
     font-family: PT Root UI;
     font-size: 24px;
     font-weight: 500;
     line-height: 26.4px;
-    text-align: left;
+    text-align: right;
     color: #95979f;
     text-decoration: line-through;
   }

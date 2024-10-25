@@ -4,7 +4,7 @@ import "./DiscountTimer.scss";
 import { endDiscount } from "../../redux/actions";
 
 const DiscountTimer = () => {
-  const [timeLeft, setTimeLeft] = useState(1);
+  const [timeLeft, setTimeLeft] = useState(120);
   const dispatch = useDispatch();
   const discountActivity = useSelector((state) => state.isDiscountActive);
 

@@ -19,7 +19,7 @@
     }
 
     &:active {
-      transform: scale(120%);
+      filter: contrast(120%);
     }
   }
 
@@ -40,13 +40,13 @@
   }
 
   &__title {
-    margin-left: 89px;
     padding-bottom: 30px;
     font-family: Rubik;
     font-size: 30px;
     font-weight: 700;
     line-height: 39px;
-    text-align: left;
+    text-align: center;
+    text-transform: uppercase;
     color: #12191d;
   }
 
@@ -135,8 +135,8 @@
   }
 
   .popup__inner-circle {
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #01b9c5;
   }
@@ -253,7 +253,13 @@
     }
 
     &:active {
-      transform: scale(105%);
+      filter: contrast(120%);
     }
+  }
+}
+
+@media (max-width: 375px) {
+  .popup {
+    
   }
 }

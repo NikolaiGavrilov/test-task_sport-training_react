@@ -4,13 +4,14 @@ import PriceOffer from "../PriceOffer/PriceOffer";
 import "./MainPage.scss";
 import React from "react";
 import PopUp from "../PopUp/PopUp";
+import PriceOfferMobile from "../PriceOfferMobile/PriceOfferMobile";
 
 const MainPage = () => {
   const discountActivity = useSelector((state) => state.isDiscountActive);
 
   return (
     <>
-      <header style={{ position: "relative", width: "1440px" }}>
+      <header className="header">
         <DiscountTimer />
         {!discountActivity && <PopUp />}
       </header>
@@ -19,10 +20,11 @@ const MainPage = () => {
         <h2 className="title">Выберите подходящий тарифный план</h2>
         <div className="main">
           <div className="main__left">
-            <img src="img/man.png" alt="спортивный_мужчина" />
+            <img className="main__img" src="img/man.png" alt="спортивный_мужчина" />
           </div>
           <div className="main__right">
             <PriceOffer />
+            <PriceOfferMobile />
             <p className="description">
               Следуя плану на 3 месяца, люди получают в 2 раза лучший результат,
               чем за 1 месяц
@@ -36,6 +38,17 @@ const MainPage = () => {
                 </a>{" "}
                 и условиями<br></br>
                 <a href="#" className="checkbox-link checkbox-link__new-line">
+                  Публичной оферты
+                </a>
+                .
+              </span>
+              <span className="checkbox-text-mobile">
+                Я соглашаюсь с{" "}
+                <a href="#" className="checkbox-link">
+                  Правилами сервиса
+                </a><br></br>
+                и условиями{" "}
+                <a href="#" className="checkbox-link">
                   Публичной оферты
                 </a>
                 .

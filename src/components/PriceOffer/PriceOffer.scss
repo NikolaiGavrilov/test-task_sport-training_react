@@ -26,8 +26,6 @@
   }
 
   &__big {
-    margin-top: 28px;
-
     grid-row: 2/3;
     grid-column: 1/4;
   }
@@ -45,7 +43,6 @@
     margin-top: 0px;
     padding-left: 0px;
     padding-right: 30px;
-    width: 161px;
   }
 
   &__big .offer__duration {
@@ -126,6 +123,134 @@
       line-height: 24.27px;
       text-align: left;
       color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .offers {
+    display: none;
+  }
+
+  .offer {
+    display: block;
+
+    &__info {
+      width: 335px;
+      height: 140px;
+      display: flex;
+      flex-direction: row;
+      background-color: #ffffff;
+      border: 2px solid #d3d6dd;
+      border-radius: 20px;
+
+      &:hover {
+        background-color: #01b9c50d;
+        border: 2px solid #01b9c5;
+      }
+    }
+
+    &__big {
+      grid-row: 2/3;
+      grid-column: 1/4;
+    }
+
+    &__big .offer__info {
+      width: 335px;
+      height: 140px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__big .offer__description {
+      text-align: left;
+      margin-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    &__big .offer__duration {
+      margin-top: 0px;
+      color: #2d3242;
+      margin-left: 0px;
+    }
+
+    &__big .offer__prices-flex {
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    &__duration {
+      margin-top: 36px;
+      margin-left: 24px;
+      font-family: Bebas Neue Cyrillic;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: #687078;
+      text-transform: uppercase;
+    }
+
+    &__prices-flex {
+      margin-top: 36px;
+      align-self: center;
+    }
+
+    &__current-price {
+      font-family: PT Root UI;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 48.4px;
+      letter-spacing: -2px;
+      text-align: left;
+      color: #2d3242;
+    }
+
+    &__old-price {
+      font-family: PT Root UI;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 22px;
+      text-align: left;
+      color: #95979f;
+      text-decoration: line-through;
+    }
+
+    &__description {
+      display: block;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 18px;
+      font-family: PT Root UI;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18.2px;
+      text-align: left;
+
+      color: #2f4353;
+    }
+
+    &__discount {
+      position: absolute;
+      right: 5px;
+      top: -30px;
+      background-image: url("../../../public/img/Star.png");
+      height: 65px;
+      width: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-text {
+        font-family: PT Root UI;
+        font-size: 18.67px;
+        font-weight: 500;
+        line-height: 24.27px;
+        text-align: left;
+        color: #ffffff;
+      }
     }
   }
 }

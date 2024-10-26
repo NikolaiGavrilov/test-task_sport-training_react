@@ -5,6 +5,7 @@ import "./MainPage.scss";
 import React from "react";
 import PopUp from "../PopUp/PopUp";
 import PriceOfferMobile from "../PriceOfferMobile/PriceOfferMobile";
+import PopUpMobile from "../PopUpMobile/PopUpMobile";
 
 const MainPage = () => {
   const discountActivity = useSelector((state) => state.isDiscountActive);
@@ -14,13 +15,18 @@ const MainPage = () => {
       <header className="header">
         <DiscountTimer />
         {!discountActivity && <PopUp />}
+        {!discountActivity && <PopUpMobile />}
       </header>
 
       <section className="main-page">
         <h2 className="title">Выберите подходящий тарифный план</h2>
         <div className="main">
           <div className="main__left">
-            <img className="main__img" src="img/man.png" alt="спортивный_мужчина" />
+            <img
+              className="main__img"
+              src="img/man.png"
+              alt="спортивный_мужчина"
+            />
           </div>
           <div className="main__right">
             <PriceOffer />
@@ -46,11 +52,14 @@ const MainPage = () => {
                 Я соглашаюсь с{" "}
                 <a href="#" className="checkbox-link">
                   Правилами сервиса
-                </a><br></br>
-                и условиями{" "}
-                <a href="#" className="checkbox-link">
-                  Публичной оферты
                 </a>
+                <br></br>
+                <span style={{ paddingLeft: "25px" }}>
+                  и условиями{" "}
+                  <a href="#" className="checkbox-link">
+                    Публичной оферты
+                  </a>
+                </span>
                 .
               </span>
             </label>

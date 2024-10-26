@@ -19,7 +19,9 @@ const MainPage = () => {
       </header>
 
       <section className="main-page">
-        <h2 className="title">Выберите подходящий тарифный план</h2>
+        <div className="title-bg">
+          <h2 className="title">Выберите подходящий тарифный план</h2>
+        </div>
         <div className="main">
           <div className="main__left">
             <img

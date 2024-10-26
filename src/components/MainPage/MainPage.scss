@@ -11,9 +11,11 @@
   padding-left: calc(50% - 1440px / 2);
   padding-right: calc(50% - 1440px / 2);
 }
-
-.title {
+.title-bg {
   background-color: #f5f7f7;
+  width: 1440px;
+}
+.title {
   font-family: Rubik;
   font-size: 40px;
   font-weight: 700;
@@ -137,6 +139,11 @@
       gap: 0px;
       opacity: 0px;
     }
+  }
+
+  .title-bg {
+    background-color: #f5f7f7;
+    width: 375px;
   }
 
   .title {

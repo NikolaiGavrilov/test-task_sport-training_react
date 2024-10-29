@@ -257,7 +257,13 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width:1024px) {
+  .popup {
+    display: none;
+  }
+}
+
+@media (max-width:375px) {
   .popup {
     display: none;
   }

@@ -114,7 +114,107 @@
   color: #818798;
 }
 
-@media (max-width: 375px) {
+@media (max-width:1024px) {
+  .header {
+    position: relative;
+    width: 375px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+
+    &__right {
+      margin: 0px 20px;
+      display: flex;
+      flex-direction: column;
+      width: 335px;
+    }
+
+    &__img {
+      width: 277px;
+      height: 441px;
+      top: 174px;
+      left: 49px;
+      gap: 0px;
+    }
+  }
+
+  .title-bg {
+    background-color: #f5f7f7;
+    width: 375px;
+  }
+
+  .title {
+    padding: 20px;
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .description {
+    padding-top: 13px;
+    padding-bottom: 26px;
+    font-family: PT Root UI;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.2px;
+    text-align: left;
+    color: #2d3242;
+  }
+
+  .checkbox {
+    margin: 0;
+  }
+  .checkbox-text-mobile {
+    display: inline;
+    width: 279px;
+    margin-left: 12px;
+    color: #818798;
+    font-family: PT Root UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.6px;
+    text-align: left;
+    text-justify: left;
+  }
+
+  .checkbox-text {
+    display: none;
+  }
+
+  .buy-btn {
+    margin: 20px;
+    background-color: #fd4d35;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #ffffff;
+    padding: 28px 100px;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(120%);
+    }
+
+    &:active {
+      filter: contrast(120%);
+    }
+  }
+
+  .disclaimer {
+    display: none;
+  }
+}
+
+@media (max-width:375px) {
   .header {
     position: relative;
     width: 375px;

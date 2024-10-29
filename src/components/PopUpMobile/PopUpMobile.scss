@@ -1,7 +1,267 @@
 .popup-mobile {
   display: none;
 }
-@media (max-width: 375px) {
+
+@media (max-width:1024px) {
+  .popup-mobile {
+    position: absolute;
+    background-color: #f5f7f7;
+    width: 335px;
+    height: 778px;
+    top: 60px;
+    left: 20px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #d3d6dd;
+
+    &__close-btn {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      &:hover {
+        filter: brightness(50%);
+      }
+
+      &:active {
+        filter: contrast(120%);
+      }
+    }
+
+    &__zakladka {
+      margin-left: 0px;
+      padding: 4px 10px 6px 10px;
+      margin-bottom: 22px;
+      font-family: PT Root UI;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18.2px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      width: 151px;
+      height: 21px;
+      color: #ffffff;
+      background-color: #01b9c5;
+    }
+
+    &__title {
+      padding-bottom: 22px;
+      font-family: Rubik;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 31.2px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #12191d;
+    }
+
+    &__text {
+      font-family: PT Root UI;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 19.5px;
+      text-align: left;
+      color: #12191d;
+    }
+
+    &__balder-text {
+      font-family: PT Root UI;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 19.5px;
+      text-align: left;
+      color: #12191d;
+    }
+
+    &__with-border {
+      border: 1.5px solid #01b9c5;
+      padding: 12px 23px 14px 22px;
+      border-radius: 30px;
+      margin-bottom: 26px;
+      margin-top: 8px;
+    }
+
+    &__offers {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      gap: 14px;
+      font-family: PT Root UI;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 19.5px;
+      text-align: left;
+      color: #12191d;
+    }
+
+    &__offers-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    &__offer {
+      position: relative;
+      width: 295px;
+      height: 133px;
+      border-radius: 20px;
+      border: 2px solid #e7eaf1;
+      background-color: #ffffff;
+      transition: background-color 0.3s ease, border 0.3s ease;
+
+      &:hover {
+        background-color: #01b9c505;
+        border: 2px solid #01b9c5;
+      }
+
+      &.selected {
+        background-color: #d0f0f0;
+        border: 2px solid #01b9c5;
+      }
+    }
+
+    .popup-mobile__offer-radio {
+      position: absolute;
+      z-index: 30;
+      top: 24px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      border: 1.5px solid #555965;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .popup-mobile__offer-radio.checked {
+      border-color: #01b9c5;
+    }
+
+    .popup-mobile__inner-circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #01b9c5;
+    }
+
+    &__offer-title {
+      position: absolute;
+      display: block;
+      top: 26px;
+      left: 20px;
+      font-family: Bebas Neue Cyrillic;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: #2d3242;
+    }
+
+    &__offer-old-price {
+      position: absolute;
+      bottom: 27px;
+      right: 20px;
+      font-family: PT Root UI;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: left;
+      color: #2d3242;
+      opacity: 0.7;
+
+      &::before,
+      &::after {
+        margin-top: 0px;
+        margin-left: -2px;
+        content: "";
+        position: absolute;
+        width: 55px;
+        height: 2px; // Толщина линий, измените по необходимости
+        background-color: #fd4d35; // Цвет линий
+      }
+
+      &::before {
+        top: 50%;
+        left: 0;
+        transform: rotate(18.1deg);
+        transform-origin: center;
+      }
+
+      &::after {
+        top: 50%;
+        left: 0;
+        transform: rotate(-18.1deg);
+        transform-origin: center;
+      }
+    }
+
+    &__offer-price-flex {
+      position: absolute;
+      top: 67px;
+      left: 20px;
+      display: flex;
+      flex-direction: row;
+      padding-top: 4px;
+      gap: 1px;
+    }
+
+    &__offer-current-price {
+      display: block;
+      font-family: PT Root UI;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 48.4px;
+      text-align: left;
+      color: #2d3242;
+    }
+
+    &__offer-discount {
+      background-image: url("../../../public/img/Star_popup-mobile.png");
+      height: 37px;
+      width: 37px;
+      margin-top: -6px;
+      margin-left: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-text {
+        font-family: PT Root UI;
+        font-size: 10.67px;
+        font-weight: 500;
+        line-height: 13.87px;
+        text-align: left;
+        color: #ffffff;
+      }
+    }
+
+    &__button {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: left;
+      padding: 20px 34.5px;
+      background-color: #fd4d35;
+      border-radius: 30px;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(120%);
+      }
+
+      &:active {
+        filter: contrast(120%);
+      }
+    }
+  }
+}
+
+@media (max-width:375px) {
   .popup-mobile {
     position: absolute;
     background-color: #f5f7f7;

@@ -66,6 +66,63 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: #fff;
+
+    &__text {
+      font-family: PT Root UI;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20.8px;
+      text-align: left;
+    }
+
+    &__numbers {
+      padding-left: 20px;
+      font-family: Bebas Neue;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 41.2px;
+      text-align: center;
+    }
+
+    &__content {
+      position: relative;
+    }
+
+    &__minutes {
+      position: absolute;
+      bottom: -10px;
+      right: 40px;
+      font-family: PT Root UI;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18.2px;
+      text-align: left;
+
+      color: #818798;
+    }
+
+    &__seconds {
+      position: absolute;
+      right: -15px;
+      bottom: -10px;
+      font-family: PT Root UI;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18.2px;
+      text-align: left;
+
+      color: #818798;
+    }
+  }
+}
+
 @media (max-width: 375px) {
   .timer {
     display: flex;

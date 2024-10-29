@@ -1,6 +1,110 @@
 .mobile-offers {
   display: none;
 }
+
+@media (max-width: 1024px) {
+  .mobile-offers {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mobile-offer {
+    &__info {
+      position: relative;
+      width: 335px;
+      height: 140px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #ffffff;
+      border: 2px solid #d3d6dd;
+      border-radius: 20px;
+
+      &:hover {
+        background-color: #01b9c50d;
+        border: 2px solid #01b9c5;
+      }
+
+      &-left {
+        width: 97px;
+        margin-left: 24px;
+      }
+    }
+
+    &__duration {
+      font-family: Bebas Neue Cyrillic;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: #687078;
+      text-transform: uppercase;
+    }
+
+    &__prices-flex {
+      position: absolute;
+      top: 36px;
+      left: 148px;
+      align-self: center;
+    }
+
+    &__current-price {
+      font-family: PT Root UI;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 48.4px;
+      letter-spacing: -2px;
+      text-align: left;
+      color: #2d3242;
+    }
+
+    &__old-price {
+      font-family: PT Root UI;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 22px;
+      text-align: left;
+      color: #95979f;
+      text-decoration: line-through;
+    }
+
+    &__description {
+      display: block;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 18px;
+      font-family: PT Root UI;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18.2px;
+      text-align: left;
+      color: #2f4353;
+    }
+
+    &__discount {
+      position: absolute;
+      right: 9px;
+      top: 4px;
+      background-image: url("../../../public/img/Star_popup.png");
+      height: 46px;
+      width: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-text {
+        font-family: PT Root UI;
+        font-size: 13.33px;
+        font-weight: 500;
+        line-height: 17.33px;
+        text-align: left;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
 @media (max-width: 375px) {
   .mobile-offers {
     margin: 0;

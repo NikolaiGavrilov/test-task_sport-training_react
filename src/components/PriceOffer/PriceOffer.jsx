@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./PriceOffer.scss";
 import { useSelector } from "react-redux";
 
-
 const PriceOffer = () => {
   const discountActivity = useSelector((state) => state.isDiscountActive);
   const [offers, setOffers] = useState([]);
@@ -27,16 +26,47 @@ const PriceOffer = () => {
     fetchOffers();
   }, []);
 
+  // const renderDescription = (duration) => {
+  //   switch (duration) {
+  //     case "1 неделя":
+  //       return "Чтобы просто начать 👍🏻";
+  //     case "1 месяц":
+  //       return `Привести тело в порядок 💪🏻`;
+  //     case "3 месяца":
+  //       return "Изменить образ жизни 🔥";
+  //     case "навсегда":
+  //       return "Всегда быть в форме и поддерживать своё здоровье ⭐️";
+  //     default:
+  //       return null;
+  //   }
+  // };
+
   const renderDescription = (duration) => {
     switch (duration) {
       case "1 неделя":
-        return "Чтобы просто начать 👍🏻";
+        return (
+          <>
+            Чтобы просто<br></br>начать 👍🏻
+          </>
+        );
       case "1 месяц":
-        return `Привести тело в порядок 💪🏻`;
+        return (
+          <>
+            Привести тело<br></br>в порядок 💪🏻
+          </>
+        );
       case "3 месяца":
-        return "Изменить образ жизни 🔥";
+        return (
+          <>
+            Изменить<br></br>образ жизни 🔥
+          </>
+        );
       case "навсегда":
-        return "Всегда быть в форме и поддерживать своё здоровье ⭐️";
+        return (
+          <>
+            Всегда быть в форме<br></br>и поддерживать своё<br></br>здоровье ⭐️
+          </>
+        );
       default:
         return null;
     }

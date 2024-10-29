@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-task_sport-training_react/static/css/main.0885e08c.css",
-    "main.js": "/test-task_sport-training_react/static/js/main.e292060e.js",
+    "main.css": "/test-task_sport-training_react/static/css/main.28166fa3.css",
+    "main.js": "/test-task_sport-training_react/static/js/main.ecfd8a1f.js",
     "static/js/453.65ebcfe5.chunk.js": "/test-task_sport-training_react/static/js/453.65ebcfe5.chunk.js",
     "static/media/bebas_neue_cyrillic.svg": "/test-task_sport-training_react/static/media/bebas_neue_cyrillic.a079c86cd5fb5e4abba3.svg",
     "static/media/bebas_neue_cyrillic.ttf": "/test-task_sport-training_react/static/media/bebas_neue_cyrillic.f39fe92d35bac3b2fe60.ttf",
@@ -9,12 +9,12 @@
     "index.html": "/test-task_sport-training_react/index.html",
     "static/media/bebas_neue_cyrillic.eot": "/test-task_sport-training_react/static/media/bebas_neue_cyrillic.31d6cfe0d16ae931b73c.eot",
     "static/media/bebas_neue_cyrillic.woff": "/test-task_sport-training_react/static/media/bebas_neue_cyrillic.31d6cfe0d16ae931b73c.woff",
-    "main.0885e08c.css.map": "/test-task_sport-training_react/static/css/main.0885e08c.css.map",
-    "main.e292060e.js.map": "/test-task_sport-training_react/static/js/main.e292060e.js.map",
+    "main.28166fa3.css.map": "/test-task_sport-training_react/static/css/main.28166fa3.css.map",
+    "main.ecfd8a1f.js.map": "/test-task_sport-training_react/static/js/main.ecfd8a1f.js.map",
     "453.65ebcfe5.chunk.js.map": "/test-task_sport-training_react/static/js/453.65ebcfe5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0885e08c.css",
-    "static/js/main.e292060e.js"
+    "static/css/main.28166fa3.css",
+    "static/js/main.ecfd8a1f.js"
   ]
 }

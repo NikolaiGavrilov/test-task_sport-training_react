@@ -14,22 +14,18 @@
 ```
 git clone https://github.com/NikolaiGavrilov/test-task_sport-training_react
 ```
-2. Проект объемный, поэтому __возможно прерывание процесса__ копирования файлов. В этом случае нужно __повторить команду клонирования__ для возобновления процесса загрузки файлов до успешного полного скачивания.
-```
-git clone https://github.com/NikolaiGavrilov/test-task_sport-training_react
-```
-3. Перейти в папку репозитория
+2. Перейти в папку репозитория
 ```
 cd test-task_sport-training_react
 ```
-4. Установить все зависимости.
+3. Установить все зависимости.
 ```
 npm i
 ```
-5. Запустить проект.
+4. Запустить проект.
 ```
 npm start
 ```
-6. Дождаться открытия сайта в окне браузера
+5. Дождаться открытия сайта в окне браузера
 
-Альтернативный способ ознакомления с проектом - [перейти по ссылке на Github Pages](https://nikolaigavrilov.github.io/Vpechatlion/)
+Альтернативный способ ознакомления с проектом - [перейти по ссылке на Github Pages](https://nikolaigavrilov.github.io/test-task_sport-training_react/)
